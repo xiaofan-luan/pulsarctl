@@ -1,4 +1,4 @@
-module github.com/streamnative/pulsarctl
+module github.com/xiaofan-luan/pulsarctl
 
 go 1.18
 

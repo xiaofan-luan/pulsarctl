@@ -71,7 +71,7 @@ func doDelete(vc *cmdutils.VerbCmd) error {
 	sName := vc.NameArgs[1]
 
 	admin := cmdutils.NewPulsarClient()
-	err = admin.Subscriptions().Delete(*topic, sName)
+	err = admin.Subscriptions().Delete(*topic, sName, false)
 	if err == nil {
 		vc.Command.Printf("Delete the subscription %s of the topic %s successfully\n",
 			sName, topic.String())
